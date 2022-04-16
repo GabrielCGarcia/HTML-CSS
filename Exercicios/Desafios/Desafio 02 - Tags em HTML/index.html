@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário do HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Paleta de cores usadas: #0FC2C0, #0CABA8, #008F8C, #015958, #023535 -->
+    <!-- Cores usadas com base na triade do verde/azul do meio da paleta acima (008F8C), sendo as cores complementares o amarelo (FFE156) e o rosa (39142A)-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <h1 style="margin-top: 0px;">Coisas importantes em HTML</h1>
+    </header>
+    <p style="color: #FFE156; margin-top: 50px;">Em HTML5, temos inumeras tags e regras, para ajudar a me lembrar, estarei listando abaixo as que eu considerar mais relevantes!</p>
+        <div style="color: #FFE156; width: 340px;">PS:
+            <p>Chegará um dia que essa lista vai ficar colossal haha!</p>
+        </div>
+    <ol>
+        <main>
+            <p class="data">05/04/2022</p>
+            <li><abbr title="&lt;h1&gt; é sempre o titulo da pagina (nesse caso é o Tags em HTML.">Titulo principal</abbr></li>
+            <li><abbr title="Os proximos h's (h1, h2, h3,etc.) irão deixar menor as letras, por questões de semantica é bom sempre ter um padrão.">Titulos menores</abbr></li>
+            <li><abbr title="&lt;p&gt; é usado para se escrever os parágrafos de texto do seu site.">Parágrafos</abbr></li>
+            <li><abbr title="img src='' '' é usado para se colocar imagens, após o ''src''' você pode apertar a tecla Crtl e Space para selecionar as imagens que estão dentro da sua pasta.">Imagens</abbr></li>
+            <li><abbr title="Use &lt;ol&gt;, dentro dos dois ''ol'' use &lt;li&gt; para adicionar os itens da lista.">Listas ordenadas</abbr></li>
+            <li><abbr title="As listas ordenadas possuem alguns estilos para os itens, para alterar o padrão use &lt;ol type='' ''>, sendo que dentro do espaço você pode por 1, A, a ou I (numeros romanos).&gt;">Estilos de listas ordenadas</abbr></li>
+            <li><abbr title="Para listas não ordenadas, ou seja, os itens não precisam ter uma ordem dentro, use o &lt;ul&gt;, seguido do &lt;li&gt; dentro para cada item.">Listas não ordenadas</abbr></li>
+            <li><abbr title="Para as listas não ordenadas, possuimos 3 estilos, sendo eles disc, circle e square.">Estilos de listas não ordenadas</abbr></li>
+            <li><abbr title="Para deixar algo em negrito use o &lt;b&gt;, POREM deste modo ele não possui semantica, então é recomendado usar o &lt;strong&gt;.">Negrito</abbr></li>
+            <li><abbr title="Para deixar algo em italico use o &lt;i&gt;, POREM deste modo ele não possui semantica, então é recomendado usar o &lt;em&gt;.">Italico</abbr></li>
+            <li><abbr title="Para deixar um texto destacado, use &lt;mark&gt;.">Destacado</abbr></li>
+            <li><abbr title="Para alterar a cor do texto marcado, use o &lt;style=''background-color''&gt;.">Destacado com outra cor</abbr></li>
+            <li><abbr title="Para criar link em HTML você deve usar o &lt;a&gt;, após isso por o URL dentro das aspas e colocar após a palavra que devera estar com o hyperlink">Links em HTML</abbr></li>
+            <li><abbr title="Para link que devem ser abertos em outra pagina após o URL coloque: target=''_blank'' rel=''external''.">Links externos</abbr></li>
+        </main>
+
+        <!-- A 1° LISTA TERMINA AQUI -->
+
+        <main>
+            <p class="data">09/04/2022</p>
+            <li><abbr title="Para uma imagem sofrer alterações no tamanho, de acordo com a tela, use a tag: source media e altere o min para max e coloque o tamanho maximo que a foto pequena deve atingir, abaixo coloque a imagem media, depois grande, etc., em srcset coloque o link da imagem.">Imagens dinamicas</abbr></li>
+            <li><abbr title="Use a tag audio preload=metadata, depois coloque o source src e adicione o link da musica seguido do tipo, se for mp3 use o mpeg">Adicionando audio</abbr></li>
+            <li><abbr title="Caso o video esteja no youtube ou vimeo, vá em compartilhar e depois incorporar, ele irá dar um codigo e basta colar e depois configurar os detalhes, altura, largura, etc.">Adicionando videos externos (Recomendado)</abbr></li>
+            <li><abbr title="Esse modo não recomendao devido ao alto consumo de banda, mas caso queira adicionar um video no proprio servidor use a tag video.">Videos do proprio servidor (Não recomendado)</abbr></li>
+            <li><abbr title="O InLine deve ser utilizado apenas para alterações bem pontuais, devido ao risco de retrabalho. Para usar utilize a tag style dentro da tag (exemplo h1 style...).">Estilo InLine (Não recomendado)</abbr></li>
+            <li><abbr title="Crie uma tag Style {} abaixo de do Title(dentro da tag head), dentro do style todas as alterações irão alterar globalmente essa unica pagina, use a tag body {} para mudar o fundo do site, color para mudar fonte, etc. Usei o interno nesse site por ser apenas uma pagina.">Estilo Local/Interno (Parcialmente recomendado)</abbr></li>
+            <li><abbr title="Crie uma tag link dentro da Head, referenciando o rel stylesheet com o link para uma pagina aparte, style.css por exemplo, dentro dessa pagina use os comendado de background-color, color, text-align, etc. Desse modo todas as paginas do site serão alteradas.">Estilo externo (Recomendado)</abbr></li>
+            <li><abbr title="O inline tem poder sobre os outros dois e o interno tem poder sobre o externo, lembre disso para alterações pontuais.">Alterações especificas</abbr></li>
+            <li><abbr title="Use a tag background-image: linear-gradient, altere angulo 45deg,90deg etc. e adicione as cores.">Cores em gradiente/degrade</abbr></li>
+            <li><abbr title="Podemos pegar cores e ideias em três sites: ADOBE COLOR, PALETTON.COM ou COOLORS.CO">Onde conseguir cores</abbr></li>
+        </main>
+
+        <!-- A 2° LISTA TERMINA AQUI -->
+
+        <main>
+            <p class="data">10/04/2022</p>
+            <li><abbr title="Use a tag main, para alterar os detalhes visuais use o css.">Caixa/box</abbr></li>
+            <li><abbr title="Para alterar o tamanho das bordas do ''main'', use a tag podding, use o podding top, bottom, left, right e coloque em px">Tamanho da caixa</abbr></li>
+            <li><abbr title="Use a tag ''box-shadow'' ou ''text-shadow''">Sombra</abbr></li>
+            <li><abbr title="Existem 4 parametros, sendo eles o tamanho da sombra para baixo, para o lado, o quanto ela se espalhae por ultimo a cor">Modificando a sombra</abbr></li>
+        </main>
+
+        <!-- A 3° LISTA TERMINA AQUI -->
+
+        <main>
+            <p class="data">13/04/2022</p>
+            <li><abbr title="Use o site google fontes para achar e importar a maioria das fontes existentes">Onde achar fontes?</abbr></li>
+            <li><abbr title="Para agrupar ou identificar algum tipo de elemento use o ID e Class"></abbr>Como identificar um elemento?</li>
+            <li><abbr title="Escreve id ou class dentro da tag e de o nome do identificador, por exemplo: &lt;h1 class=''titulo''&gt;">Como usar?</abbr></li>
+            <li><abbr title="O # represeta o ID e o . (ponto) representa class, só devemos ter um ID por pagina,já o class pode ser varios">ID e Classe</abbr></li>
+            <li><abbr title="Uma pseudo-classe deve ser feita com : (dois pontos, um sobre outro)">Pseudo-classe</abbr></li>
+            <li><abbr title="Para fazer uma box mudar de cor ao passar o mouse por cima use o :hover">Hover: Destaque ao passar o mouse</abbr></li>
+            <li><abbr title="Usar um div &gt; ''tag'', podemos fazer uma Child, ou seja, todas as tags que estiverem dentro dessa div terão alterações">Child ou Children</abbr></li>
+            <li><abbr title="Para esconder um texto use a tag: display: none, para fazer aparecer quando passar o mouse por cima (hover) use o display:block, por exemplo">Display:None/Block: Esconder e aparecer texto</abbr></li>
+            <li><abbr title="Usando a pseudo-class visited, você consegue fazer um link mudar a cor da fonte após ser clicado">Pseudo-Class: Visited</abbr></li>
+            <li><abbr title="Usando a pseudo-class acitive, você consegue fazer um link mudar de cor no momento que ele está sendo clicado">Pseudo-Class: Active</abbr></li>
+        </main>
+    </ol>
+</body>
+</html>
