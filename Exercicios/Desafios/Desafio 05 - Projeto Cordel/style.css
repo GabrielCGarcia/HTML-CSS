@@ -12,6 +12,7 @@ header > h1 {
     margin: 0px;
     font-style: italic;
     text-align: center;
+    font-variant: small-caps;
 }
 
 header > p {
@@ -22,7 +23,7 @@ header > p {
 
 header a {
     text-decoration: none;
-    font-size: bold;
+    font-size: bolder;
     color: white;
 }
 
